@@ -1,0 +1,8 @@
+f = open('number1.txt', 'w')
+f.write('One-1 Two-2 Three-3 Four-4')
+f.close()
+f = open('number1.txt', 'r')
+number = f.read()
+f.close()
+number = number.replace('One',"Один").replace('Two',"Два").replace('Three',"Три").replace('Four',"Четыре")
+print(number)
